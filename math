@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+
+var op = process.argv[2];
+var n1 = Number(process.argv[3]);
+var n2 = +(process.argv[4]);
+
+if (op === "add"){
+	console.log(n1 + n2)
+}
+else if (op === "sub"){
+	console.log(n1 - n2)
+}
+else if (op === "mult"){
+	console.log(n1 * n2)
+}
+else if (op === "div"){
+	console.log(n1 / n2)
+}
