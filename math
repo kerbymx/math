@@ -2,18 +2,19 @@
 
 
 var op = process.argv[2];
-var n1 = Number(process.argv[3]);
+var n1 = +(process.argv[3]);
 var n2 = +(process.argv[4]);
 
-if (op === "add"){
+if (op === "add" || op === "+"){
 	console.log(n1 + n2)
 }
-else if (op === "sub"){
+else if (op === "sub" || op === "-"){
 	console.log(n1 - n2)
 }
-else if (op === "mult"){
+// 	TODO: does NOT 
+else if (op === "mult" || op === "*"){
 	console.log(n1 * n2)
 }
-else if (op === "div"){
+else if (op === "div" || op === "/"){
 	console.log(n1 / n2)
 }
